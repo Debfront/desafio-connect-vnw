@@ -1,11 +1,17 @@
 .header{
-    border: 2px solid red;
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #205691;
     img{
         width: 5vw;
+        border-radius: 50%;
     }
+    .link{
+        color: #fff;    
+        margin-left: 3rem;
+        font-size: 1.75rem;
+    }
+    
 }

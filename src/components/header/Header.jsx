@@ -17,10 +17,10 @@ export default function Header() {
 
       <nav>
         <ul>
-          <Link to="/doacao">Doação</Link>
-          <Link to="/voluntariado"> Voluntariado</Link>
-          <Link to="/mentoria">Mentorias</Link>
-          <Link to="/eventosEP">Eventos</Link>
+          <Link className={S.link}  to="/doacao">Doação</Link>
+          <Link className={S.link}  to="/voluntariado"> Voluntariado</Link>
+          <Link className={S.link}  to="/mentoria">Mentorias</Link>
+          <Link className={S.link}  to="/eventosEP">Eventos</Link>
         </ul>
       </nav>
       <img src="https://avatars.githubusercontent.com/u/50721486?v=4" alt="" />
