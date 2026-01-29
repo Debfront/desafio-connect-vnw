@@ -4,6 +4,7 @@ import Mundo from "../../assets/images/mundo.png";
 import img500 from "../../assets/images/img500.png";
 import img1200 from "../../assets/images/img1200.png";
 import img50 from "../../assets/images/img50.png";
+import Footer from "../footer/Footer";
 
 export default function Main() {
   return (
@@ -44,6 +45,7 @@ export default function Main() {
           <img src={Mundo} alt="" srcset="" />
         </section>
       </div>
+      <Footer/>
     </>
   );
 }

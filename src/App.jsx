@@ -8,7 +8,7 @@ import EventosEP from "./pages/eventosEP/EventosEP";
 import Usuario from "./pages/usuario/Usuario";
 import "./globalStyles.scss";
 import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
+
 
 
 
@@ -17,7 +17,6 @@ export default function App() {
     <>
       <BrowserRouter>
         <Header />
-         
              <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/doacao" element={<Doacao />} />
@@ -26,7 +25,7 @@ export default function App() {
           <Route path="/eventosEP" element={<EventosEP />} />
           <Route path="/usuario" element={<Usuario />} />
         </Routes>
-       <Footer/>
+    
       </BrowserRouter>
     </>
   );

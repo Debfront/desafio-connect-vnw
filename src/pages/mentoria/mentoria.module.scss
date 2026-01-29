@@ -1,0 +1,45 @@
+.principal{
+min-height: 75vh;
+
+}
+
+h2 {
+  color: #205691;
+  text-align: center;
+  font-size: 3rem;
+ padding: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px; 
+  align-items: start; 
+  padding: 0 0.5%;
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #122F97;
+  }
+
+  button {
+    margin-top: 15px;
+    padding: 1rem;
+    background-color: #205691;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer; 
+    
+    &:hover {
+      background-color: lighten(#205691, 10%);
+    }
+  }
+  article{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
+}
+
