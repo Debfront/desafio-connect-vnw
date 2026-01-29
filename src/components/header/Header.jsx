@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import S from "./header.module.scss";
 
 export default function Header() {
+ 
+
   return (
     <>
-    
-    
     <header className= {S.header}>
       <section>
         <Link to="/">
@@ -23,9 +23,15 @@ export default function Header() {
           <Link className={S.link}  to="/eventosEP">Eventos</Link>
         </ul>
       </nav>
-      <img src="https://avatars.githubusercontent.com/u/50721486?v=4" alt="" />
+      <div>
+          <Link to="/usuario">
+   <img className={S.perfil} src="https://avatars.githubusercontent.com/u/50721486?v=4" alt=""/>
+   </Link>
+      </div>
+      
     </header>
-    <Link to="/usuario">Débora Monteiro</Link>
+
+
     </>
   );
 }

@@ -1,0 +1,48 @@
+
+.main{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    // padding: 4rem 2rem 0rem 2rem;
+    height: 90vh;
+    position: relative;
+   
+   
+    h1{
+   
+        font-size: 4rem;
+        color: #205691;
+    }
+
+    img{
+        width: 80%;
+      
+    
+    }
+    button{
+    background-color: #FD7267;
+width: 20.75rem;
+height: 4rem;
+    font-size: 1.3rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+}
+
+.esquerda{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+      padding: 2rem;
+
+    p{
+        color: #205691;
+        font-size: 1.5rem;
+    }
+}
+
+.direita{
+    position: absolute;
+}
