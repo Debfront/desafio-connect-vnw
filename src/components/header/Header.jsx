@@ -31,10 +31,9 @@ export default function Header() {
     className={S.perfil} 
     src="https://avatars.githubusercontent.com/u/50721486?v=4" 
     alt="Perfil" 
-    onClick={() => setMenuOpen(!menuOpen)} // Inverte o estado (abre/fecha)
+    onClick={() => setMenuOpen(!menuOpen)} 
   />
 
-  {/* O menu só aparece se menuOpen for true */}
   {menuOpen && (
     <nav className={S.menuDropdown}>
       <ul>
@@ -48,8 +47,6 @@ export default function Header() {
 </div>
       </div>
     </header>
-
-
     </>
   );
 }
