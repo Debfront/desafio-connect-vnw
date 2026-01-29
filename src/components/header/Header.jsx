@@ -5,6 +5,7 @@ import S from "./header.module.scss";
 
 export default function Header() {
  
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
@@ -23,12 +24,29 @@ export default function Header() {
           <Link className={S.link}  to="/eventosEP">Eventos</Link>
         </ul>
       </nav>
+
       <div>
-          <Link to="/usuario">
-   <img className={S.perfil} src="https://avatars.githubusercontent.com/u/50721486?v=4" alt=""/>
-   </Link>
+       <div className={S.usuarioContainer}>
+  <img 
+    className={S.perfil} 
+    src="https://avatars.githubusercontent.com/u/50721486?v=4" 
+    alt="Perfil" 
+    onClick={() => setMenuOpen(!menuOpen)} // Inverte o estado (abre/fecha)
+  />
+
+  {/* O menu só aparece se menuOpen for true */}
+  {menuOpen && (
+    <nav className={S.menuDropdown}>
+      <ul>
+        <li><Link to="/usuario"> Usuário</Link></li>
+        <li><Link to="/voluntariado">Voluntariados</Link></li>
+           <li><Link to="">Configurações de conta</Link></li>
+              <li><Link to="/paginaLogin">Sair</Link></li>
+      </ul>
+    </nav>
+  )}
+</div>
       </div>
-      
     </header>
 
 

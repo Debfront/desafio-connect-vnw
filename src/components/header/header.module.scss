@@ -16,3 +16,50 @@
     }
     
 }
+
+
+.usuarioContainer {
+  position: relative; // Necessário para o menu se basear nesta div
+
+  .perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .menuDropdown {
+    position: absolute;
+    right: 0;
+    top: 50px; // Ajuste conforme a altura do seu header
+    background: #205691;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 1rem;
+    z-index: 10;
+    color: #fff;
+     
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+     
+
+      li {
+        padding: 8px 16px;
+        cursor: pointer;
+     
+        
+        &:hover {
+          background-color: #7b8dbe;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
