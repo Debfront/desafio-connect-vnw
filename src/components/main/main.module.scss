@@ -1,48 +1,65 @@
+.main {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  max-width: 1200px;
+  margin: 0 auto;
 
-.main{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    // padding: 4rem 2rem 0rem 2rem;
-    height: 90vh;
-    position: relative;
-   
-   
-    h1{
-   
-        font-size: 4rem;
-        color: #205691;
-    }
+  h1 {
+    font-size: 4rem;
+    color: #205691;
+  }
 
-    img{
-        width: 80%;
-      
-    
-    }
-    button{
-    background-color: #FD7267;
-width: 20.75rem;
-height: 4rem;
+  img {
+    width: 80%;
+  }
+  button {
+    background-color: #fd7267;
+    width: 20.75rem;
+    height: 4rem;
     font-size: 1.3rem;
     color: #fff;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+  }
 }
 
+
+
+.esquerda {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+
+  p {
+    color: #205691;
+    font-size: 1.5rem;
+  }
 }
 
-.esquerda{
+.direita {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+}
+
+.numeros {
+  width: 90%;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .info {
     display: flex;
-    flex-direction: column;
-    gap: 3rem;
-      padding: 2rem;
-
-    p{
-        color: #205691;
-        font-size: 1.5rem;
-    }
-}
-
-.direita{
-    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+  img {
+    width: 50%;
+  }
 }
