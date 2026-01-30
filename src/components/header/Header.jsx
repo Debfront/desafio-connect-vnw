@@ -33,17 +33,16 @@ export default function Header() {
     alt="Perfil" 
     onClick={() => setMenuOpen(!menuOpen)} 
   />
-
-  {menuOpen && (
-    <nav className={S.menuDropdown}>
+  
+    <nav className={menuOpen ? S.menuDropdown : S.closedNav}>
       <ul>
         <li><Link to="/usuario"> Usuário</Link></li>
-        <li><Link to="/voluntariado">Voluntariados</Link></li>
+        <li><Link to="/voluntariado">Meu Voluntariado</Link></li>
            <li><Link to="">Configurações de conta</Link></li>
               <li><Link to="/paginaLogin">Sair</Link></li>
       </ul>
     </nav>
-  )}
+  
 </div>
       </div>
     </header>
