@@ -32,16 +32,12 @@ export default function Main() {
            <img src={img50} alt="" srcset="" />
            <p>Vidas impactadas</p>
             </div>
-         
-        
 
           </div>
         </section>
 
 
-        <section>
-
-
+        <section className="imgMundo">
           <img src={Mundo} alt="" srcset="" />
         </section>
       </div>

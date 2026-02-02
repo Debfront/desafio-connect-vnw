@@ -61,3 +61,18 @@
 .closedNav{
   display: none;
 }
+
+
+@media (max-width: 768px){
+  .perfil{
+    max-width: 57px;
+  }
+
+}
+
+@media (max-width: 500px){
+  .link{
+    font-size: 15px;
+  }
+
+}
