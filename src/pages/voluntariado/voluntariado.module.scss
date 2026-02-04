@@ -1,0 +1,71 @@
+.voluntariadoContainer {
+  min-height: 70vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    color: #205691;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+  }
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px;
+
+  
+  img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    color: #122F97;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    min-height: 3rem; 
+  }
+
+  p {
+    color: #205691;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    flex-grow: 1; 
+  }
+
+  button {
+    background-color: #205691;
+    color: white;
+    border: none;
+    padding: 0.8rem 2.5rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 60%; 
+    margin-bottom: 1rem;
+
+    &:hover {
+      background-color: #122F97;
+    }
+  }
+}

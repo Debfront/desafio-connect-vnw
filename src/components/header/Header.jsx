@@ -56,9 +56,7 @@ export default function Header() {
         <li><Link to="/voluntariado">Meu Voluntariado</Link></li>
            <li><Link to="">Configurações de conta</Link></li>
 
-           {!isMobile && (
-
-              
+           {isMobile && (
  <nav>
         <ul>
           <Link className={S.link}  to="/doacao">Doação</Link>
