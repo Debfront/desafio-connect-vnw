@@ -1,6 +1,5 @@
 .principal{
-min-height: 75vh;
-
+  height: 80vh;
 }
 
 h2 {
@@ -16,16 +15,27 @@ h2 {
   gap: 10px; 
   align-items: start; 
   padding: 0 0.5%;
+  margin-bottom: 80px;
+
   
   h3 {
     font-size: 1.5rem;
     color: #122F97;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: bold;
   }
 
+  p{
+     font-family: "Inter", sans-serif;
+     color: #122F97;
+     font-weight: 400;
+    
+  }
   button {
     margin-top: 15px;
     padding: 1rem;
     background-color: #205691;
+    border-radius: 10px;
     color: #fff;
     font-size: 1.2rem;
     border: none;
@@ -43,3 +53,12 @@ h2 {
 }
 }
 
+@media (max-width: 480px) {
+  .principal {
+    padding: 1rem 3%;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+}

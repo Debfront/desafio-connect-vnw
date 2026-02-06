@@ -34,9 +34,9 @@ export default function Mentoria() {
            </article>
 
         </div>
-    
+        <Footer/>
           </section>
-           <Footer/>
+  
     </>
   )
 }

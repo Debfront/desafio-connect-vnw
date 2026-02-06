@@ -44,8 +44,9 @@ const cards = [
           </article>
         ))}
       </section>
+          <Footer/>
       </main>
-       <Footer/>
+   
    
     </div>
   )

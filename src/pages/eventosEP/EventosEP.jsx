@@ -45,8 +45,9 @@ export default function EventosEP() {
               </article>
             ))}
           </section>
+                 <Footer/>
           </main>
-           <Footer/>
+    
        
         </div>
   );

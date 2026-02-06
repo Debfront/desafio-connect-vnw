@@ -29,7 +29,7 @@ export default function Voluntariado() {
  
  
   return (
-      <div>
+      <div className={S.container}>
           <main className={S.voluntariadoContainer}>
           <h2>Voluntariado</h2>
     
@@ -43,8 +43,9 @@ export default function Voluntariado() {
               </article>
             ))}
           </section>
+          <Footer/>
           </main>
-           <Footer/>
+           
        
         </div>
   )

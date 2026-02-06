@@ -38,7 +38,7 @@ export default function Main() {
 
 
         <section className="imgMundo">
-          <img src={Mundo} alt="" srcset="" />
+          <img src={Mundo} alt="" srcset="" className= {S.mundo} />
         </section>
       </div>
       <Footer/>
